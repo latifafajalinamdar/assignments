@@ -80,13 +80,13 @@ public class Assignment1_DataTypes {
 		
 		//Person's blood type: 'A'
 		char person_Blood_Type = 'A';
-		System.out.println("Person's blood type:"+person_Blood_Type);
+		System.out.println("Person's blood type: "+person_Blood_Type);
 				
 		//Title of a book: "To Kill a Mockingbird"
 		String title_Of_Book = "To Kill a Mockingbird";
 		System.out.println("Title of a book"+title_Of_Book);
 		
-		
+	
 		
 	}
 
