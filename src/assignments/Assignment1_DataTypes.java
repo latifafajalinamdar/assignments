@@ -49,19 +49,19 @@ public class Assignment1_DataTypes {
 		int numberOfEmployCompany= 500 ;
 		System.out.println("Number of employees in a company"+numberOfEmployCompany) ;
 				
-				//Time of an event: 2:30 PM
+		//Time of an event: 2:30 PM
 		double timeOfEvent = 2.30;
 		System.out.println("Time of an event"+timeOfEvent+"PM");
 				
-				//Name of a country: "United States"
+		//Name of a country: "United States"
 		String nameOfCountry = "United States";
 		System.out.println("Name of a country:"+nameOfCountry);
 					
-				//Person's eye color: "Brown"
+		//Person's eye color: "Brown"
 		String personEyeColor = "Brown";
 		System.out.println("Person's eye color:"+personEyeColor);
 				
-				//Person's birthplace: "New York City"
+		//Person's birthplace: "New York City"
 		String personBirthPlace = "New York City";
 		System.out.println("Person's birthplace:"+personBirthPlace);
 
