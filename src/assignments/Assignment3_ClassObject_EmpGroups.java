@@ -13,6 +13,9 @@ public class Assignment3_ClassObject_EmpGroups extends Assignment3_ClassObject_E
 		child_employee_ID=obj.employee_ID;
 		child_employee_Names=obj.employee_Names;
 		
+		System.out.println(child_employee_ID.length);
+		System.out.println(child_employee_Names.length);
+		
 		System.out.println("Employee Name :"+child_employee_Names[0]+",EMployee Id:"+child_employee_ID[0]);
 		System.out.println("Employee Name :"+child_employee_Names[1]+",EMployee Id:"+child_employee_ID[1]);
 		System.out.println("Employee Name :"+child_employee_Names[2]+",EMployee Id:"+child_employee_ID[2]);
