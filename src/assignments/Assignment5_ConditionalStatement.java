@@ -12,32 +12,39 @@ public class Assignment5_ConditionalStatement {
 		boolean isEmployed = true;
 		double debtToIncomeRatio = 35.0;
 		
-		if(creditScore>750)
-		{
-			System.out.println("Loan Approved Automatically");
-		}
-		
-		else if(creditScore>=650 && creditScore<=750)
-			
-		{
-			System.out.println("Additional Checking is performed for income,employment status and debt to Income Ratio");
-			
-			if(income>=55000.0 && isEmployed==true && debtToIncomeRatio<40.0)
-			{
-				System.out.println("Loan is approved");
-			}
-			
-			else
-			{
-				System.out.println("Loan is decliened due to income or employement status or debtincomereatio is not meeting the condition"  );
-			}
-		}
-		
-		else if(creditScore<650)
-		{
-			System.out.println("The Loan is declied");
-		}
+		// Display initial message
+				System.out.println("Loan Evaluation Result for: " + customerName);
 
+				// Step 1: Check credit score
+				if (creditScore > 750) {
+					// If credit score is above 750, the loan is automatically approved
+					System.out.println("Loan Approved: Excellent credit score.");
+				} else if (creditScore >= 650) {
+					// If credit score is between 650 and 750, further checks are needed
+					// Step 2: Check income
+					if (income >= 50000) {
+						// If income is at least $50,000, check employment status
+						if (isEmployed) {
+							// Step 3: Check debt-to-income ratio
+							if (debtToIncomeRatio < 40.0) {
+								// If DTI ratio is less than 40%, approve the loan
+								System.out.println("Loan Approved: Meets all criteria.");
+							} else {
+								// If DTI is 40% or greater, deny the loan
+								System.out.println("Loan Denied: Debt-to-Income ratio is too high.");
+							}
+						} else {
+							// If the customer is unemployed, deny the loan
+							System.out.println("Loan Denied: Customer is not employed.");
+						}
+					} else {
+						// If income is less than $50,000, deny the loan
+						System.out.println("Loan Denied: Income is less than required.");
+					}
+				} else {
+					// If credit score is below 650, deny the loan
+					System.out.println("Loan Denied: Credit score is too low.");
+				}
 	
 }
 
