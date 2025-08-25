@@ -1,10 +1,11 @@
 package assignments;
 
-public class Assignment10_ArraysandLoops {
+public class Assignment11_ArraysandLoops {
 
 	public static void main(String[] args) 
 	{
-		int[] arr= {12 ,34,11,36,87,98,93};
+		
+       int[] arr= {12 ,34,11,36,87,98,93};
 		
 		int largest=-1;
 		int secondlargets=-1;
@@ -45,7 +46,7 @@ public class Assignment10_ArraysandLoops {
 		}
 
 		System.out.println("Third Largest "+thirdlargest);
-		
+
 	}
 
 }
